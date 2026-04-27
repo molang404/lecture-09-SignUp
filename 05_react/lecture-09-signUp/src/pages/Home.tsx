@@ -55,6 +55,24 @@ type ErrorType = {
 };
 
 function Home() {
+    // 1. 화면에 사용자가 입력해야 할 로그인 폼을 작성
+    // --- styled-components의 힘을 빌어서 화면 디자인
+
+    // 2. 그에 대해 사용자가 입력 처리를 끝내면
+    // --- 각 input에 대한 useState를 작성
+    // --- input과 useState를 연결 (4개 input에 onChange 작성)
+    // -- 사용자가 엔터를 칠 때 또는 회원가입 버튼을 눌렀을 때 onSubmit 작성
+
+    // 3. 유효성 검사를 한 후 사용자를 이동 시킨다.
+    // --- if 처리를 통해 내가 생각한, 전송에서 탈락해야 할 조건을 작성
+
+    // 4. 단, 유효성 검사에 실패하면 에러 메세지를 화면에 출력시키고 끝낸다.
+    // --- useState를 또다시 만들 필요가 있음
+    // --- 여러 개의 에러를 관리할 useState를 만들어도 되고, 하나의 useState를 사용할 수도 있음
+    // --- 하나의 useState를 쓴다면, function 안에서 여러 번의 setState가 동작되려면
+    // -- function 내에서 한 번만 setState 처리를 하기 위해, 새로운 object를 작성하였음
+
+
     const navigate = useNavigate();
 
     const [username, setUsername] = useState("");
