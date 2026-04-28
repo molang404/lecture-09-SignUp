@@ -3,6 +3,8 @@ import { useNavigate } from "react-router";
 import {Title, Wrap} from "../components/Components.tsx";
 import {useForm} from "react-hook-form";
 
+const a: string = 123
+
 const Card = styled.form`
     background-color: white;
     padding: 40px;
@@ -73,7 +75,6 @@ function Home() {
     // --- 여러 개의 에러를 관리할 useState를 만들어도 되고, 하나의 useState를 사용할 수도 있음
     // --- 하나의 useState를 쓴다면, function 안에서 여러 번의 setState가 동작되려면
     // -- function 내에서 한 번만 setState 처리를 하기 위해, 새로운 object를 작성하였음
-
 
     const navigate = useNavigate();
 

@@ -4,6 +4,7 @@ import Result from "./pages/Result";
 import GlobalStyle from "./GlobalStyle";
 
 function App() {
+
     return (
         <>
             <GlobalStyle />
@@ -16,5 +17,8 @@ function App() {
         </>
     );
 }
+
+
+
 
 export default App;
